@@ -3,7 +3,6 @@ import random
 MAX = 100
 MIN = 1
 
-
 def generate_secret_number():
     secret_number = random.randint(MIN, MAX)
     return secret_number
@@ -41,11 +40,13 @@ def prompt_valid_guess():
             continue
         return guess
 
-
 if __name__ == "__main__":
+    # Test code for a module goes here
+    # Verify the secret number generator
     number_to_print = generate_secret_number()
     print(f"Secret number: {number_to_print}")
 
+    # Verify that the guess validation works on the secret number
     for _ in range(3):
         print(f"Secret number: {number_to_print}")
         print("Check if the code can identify numbers above, numbers below, and a correct guess.")
